@@ -1,5 +1,5 @@
 body.home-bg {
-    background: url('/image/workfromehome.png');
+    background-image: url('/image/workfromehome.png');
     background-size: cover;
     background-position: center;
     background-repeat:no-repeat;

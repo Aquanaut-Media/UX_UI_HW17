@@ -1,7 +1,9 @@
 body.home-bg {
-    background: url('/image/workfromehome.png') no-repeat center center fixed;
+    background: url('/image/workfromehome.png');
     background-size: cover;
     background-position: center;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
 }
 
 

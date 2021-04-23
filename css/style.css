@@ -34,7 +34,7 @@ header {
 .logo {
     width: auto;
     padding-top: 20px;
-    transition: all .2s ease-in-out;
+    transition: transform .2s ease-in-out;
 }
 
 .logo:hover{
@@ -455,9 +455,18 @@ hr {
 .heroResume {
   display: flex;
   flex-direction: column;
-  margin-left: 258px;
+  margin-left: 200px;
   padding: 20px 10% 50px 10%;
 }
+
+/*
+.resumeContainer {
+  box-shadow: 2px 2px 5px #313131;
+  padding: 5%;
+  width: 100%;
+  background-color: #F8F8F8;
+}
+*/
 
 .resumeCentered {
   text-align: center;
@@ -466,6 +475,15 @@ hr {
 
 .resumeCentered p{
   color: black;
+}
+
+.resumeCentered h1{
+  font-size: 32px;
+  letter-spacing: 4px;
+}
+
+.resumeCentered h2{
+  letter-spacing: 3px;
 }
 
 .resumeProject button{
@@ -494,6 +512,15 @@ hr {
   padding: 15px 30px 15px 30px;
   font-size: small;
   text-transform: uppercase;
+  transition:transform .2s ease-in-out;
+  letter-spacing: 1.2px;
+}
+
+.heroResume button:hover{
+  box-shadow: 2px 2px 5px #313131;
+  transform: scale(1.02);
+  background-color: white;
+  color: #161616;
 }
 
 /* Graphic Design Gallery */
@@ -707,5 +734,11 @@ hr {
       .projectCover {
         max-width: 90%;
         margin: auto;
+      }
+    }
+
+    @media screen and (min-width:1400px) {
+      .heroResume {
+        padding: 20px 20% 50px 20%;
       }
     }
